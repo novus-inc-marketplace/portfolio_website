@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Novus Inc - Digital Agency</title>
+    <title>Novus Inc - Ideas Into Action</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Novus Inc, web development, full stack development, frontend development, backend development, responsive design, UI/UX implementation" name="keywords">
     <meta content="Novus Inc - Web development and full stack developing business" name="description">
@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/light-theme.css" rel="stylesheet" id="light-theme" disabled>
 </head>
 
 <body>
@@ -55,21 +56,22 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="#projects" class="nav-item nav-link">Project</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="project.html" class="nav-item nav-link">Project</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="#team" class="dropdown-item">Our Team</a>
-                                <a href="#testimonials" class="dropdown-item">Testimonial</a>
-                                <a href="#404" class="dropdown-item">404 Page</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="#contact" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
+                    <a href="contact.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
+                    <button id="theme-toggle" class="btn btn-outline-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Light Mode</button>
                 </div>
             </nav>
 
@@ -79,8 +81,8 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="text-white mb-4 animated slideInDown">Novus Inc - Ideas Into Action</h1>
                             <p class="text-white pb-3 animated slideInDown">At Novus Inc, we transform visionary ideas into powerful digital realities. Our approach combines technical expertise with creative innovation to deliver web solutions that not only meet but exceed expectations.</p>
-                            <a href="#about" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">About Us</a>
-                            <a href="#contact" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <a href="about.html" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">About Us</a>
+                            <a href="contact.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
@@ -158,7 +160,7 @@
                                 <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <a href="#services" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Our Services</a>
+                        <a href="service.html" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Our Services</a>
                     </div>
                     <div class="col-lg-6">
                         <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
@@ -214,7 +216,7 @@
                             </div>
                             <h5 class="mb-3">Frontend Development</h5>
                             <p class="m-0">Creating responsive, user-friendly interfaces with modern frameworks like React, Vue, and Angular. Focus on performance, accessibility, and exceptional user experience.</p>
-                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="contact.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -224,7 +226,7 @@
                             </div>
                             <h5 class="mb-3">Backend Development</h5>
                             <p class="m-0">Building robust, scalable server-side applications with Node.js, Python, PHP, and database solutions. Focus on security, performance, and API integration.</p>
-                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="contact.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -234,7 +236,7 @@
                             </div>
                             <h5 class="mb-3">Full Stack Development</h5>
                             <p class="m-0">End-to-end web application development combining frontend and backend technologies. Seamless integration between client-side and server-side components.</p>
-                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="contact.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -244,7 +246,7 @@
                             </div>
                             <h5 class="mb-3">Responsive Design</h5>
                             <p class="m-0">Creating websites and applications that work seamlessly across all devices. Mobile-first approach ensuring optimal user experience on any screen size.</p>
-                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="contact.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -254,7 +256,7 @@
                             </div>
                             <h5 class="mb-3">UI/UX Implementation</h5>
                             <p class="m-0">Transforming design concepts into functional, interactive interfaces. Focus on user-centered design principles and intuitive navigation.</p>
-                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="contact.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -264,7 +266,7 @@
                             </div>
                             <h5 class="mb-3">Performance Optimization</h5>
                             <p class="m-0">Improving website speed, efficiency, and user experience through code optimization, caching strategies, and modern deployment techniques.</p>
-                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="contact.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +317,7 @@
                                 <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="contact.html"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
@@ -330,7 +332,7 @@
                                 <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="contact.html"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
@@ -345,7 +347,7 @@
                                 <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="contact.html"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
@@ -360,7 +362,7 @@
                                 <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="contact.html"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
@@ -375,7 +377,7 @@
                                 <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="contact.html"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
@@ -390,7 +392,7 @@
                                 <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="contact.html"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
@@ -429,11 +431,11 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">About Novus Inc</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="about.html">About Novus Inc</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Services</a>
+                        <a class="btn btn-link" href="service.html">Services</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
@@ -479,10 +481,10 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="#home">Home</a>
-                                <a href="#services">Services</a>
-                                <a href="#projects">Projects</a>
-                                <a href="#contact">Contact</a>
+                                <a href="index.html">Home</a>
+                                <a href="service.html">Services</a>
+                                <a href="project.html">Projects</a>
+                                <a href="contact.html">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -509,6 +511,48 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <!-- Theme Switcher Javascript -->
+    <script>
+        // Check for saved theme preference or default to dark theme
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        
+        // Set button text based on current theme
+        const themeToggle = document.getElementById('theme-toggle');
+        if (currentTheme === 'light') {
+            themeToggle.textContent = 'Dark Mode';
+        } else {
+            themeToggle.textContent = 'Light Mode';
+        }
+        
+        // Switch theme function
+        function switchTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            let switchToTheme = 'dark';
+            
+            if (currentTheme === 'dark') {
+                switchToTheme = 'light';
+                themeToggle.textContent = 'Dark Mode';
+            } else {
+                themeToggle.textContent = 'Light Mode';
+            }
+            
+            document.documentElement.setAttribute('data-theme', switchToTheme);
+            localStorage.setItem('theme', switchToTheme);
+            
+            // Toggle the light theme stylesheet
+            const lightThemeLink = document.getElementById('light-theme');
+            if (switchToTheme === 'light') {
+                lightThemeLink.disabled = false;
+            } else {
+                lightThemeLink.disabled = true;
+            }
+        }
+        
+        // Add event listener to theme toggle button
+        themeToggle.addEventListener('click', switchTheme);
+    </script>
 </body>
 
 </html>

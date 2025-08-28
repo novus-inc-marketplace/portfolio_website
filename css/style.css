@@ -1,9 +1,14 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6222CC;
+    --primary: #00BCD4; /* Cyan blue */
     --secondary: #FBA504;
     --light: white;
     --dark: #04000B;
+}
+
+/* Override Bootstrap variables */
+:root {
+    --bs-primary: #00BCD4; /* Cyan blue */
 }
 
 
