@@ -30,7 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/light-theme.css" rel="stylesheet" id="light-theme" disabled>
+    <link href="css/dark-theme.css" rel="stylesheet">
 </head>
 
 <body>
@@ -329,11 +329,14 @@
             document.documentElement.setAttribute('data-theme', switchToTheme);
             localStorage.setItem('theme', switchToTheme);
             
-            // Toggle the light theme stylesheet
+            // Toggle the theme stylesheets
+            const darkThemeLink = document.getElementById('dark-theme');
             const lightThemeLink = document.getElementById('light-theme');
             if (switchToTheme === 'light') {
+                darkThemeLink.disabled = true;
                 lightThemeLink.disabled = false;
             } else {
+                darkThemeLink.disabled = false;
                 lightThemeLink.disabled = true;
             }
         }
