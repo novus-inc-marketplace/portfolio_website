@@ -71,7 +71,6 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
-                    <button id="theme-toggle" class="btn btn-outline-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Light Mode</button>
                 </div>
             </nav>
 
@@ -299,51 +298,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     
-    <!-- Theme Switcher Javascript -->
-    <script>
-        // Check for saved theme preference or default to dark theme
-        const currentTheme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        
-        // Set button text based on current theme
-        const themeToggle = document.getElementById('theme-toggle');
-        if (currentTheme === 'light') {
-            themeToggle.textContent = 'Dark Mode';
-        } else {
-            themeToggle.textContent = 'Light Mode';
-        }
-        
-        // Switch theme function
-        function switchTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            let switchToTheme = 'dark';
-            
-            if (currentTheme === 'dark') {
-                switchToTheme = 'light';
-                themeToggle.textContent = 'Dark Mode';
-            } else {
-                switchToTheme = 'dark';
-                themeToggle.textContent = 'Light Mode';
-            }
-            
-            document.documentElement.setAttribute('data-theme', switchToTheme);
-            localStorage.setItem('theme', switchToTheme);
-            
-            // Toggle the theme stylesheets
-            const darkThemeLink = document.getElementById('dark-theme');
-            const lightThemeLink = document.getElementById('light-theme');
-            if (switchToTheme === 'light') {
-                darkThemeLink.disabled = true;
-                lightThemeLink.disabled = false;
-            } else {
-                darkThemeLink.disabled = false;
-                lightThemeLink.disabled = true;
-            }
-        }
-        
-        // Add event listener to theme toggle button
-        themeToggle.addEventListener('click', switchTheme);
-    </script>
 </body>
 
 </html>
