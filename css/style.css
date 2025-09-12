@@ -230,6 +230,7 @@ h6,
         center center,
         center bottom;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media (max-width: 991.98px) {
@@ -357,6 +358,8 @@ h6,
     margin-top: -15px;
     padding-bottom: 60px;
     background: var(--primary);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .service-item .service-icon {
@@ -433,6 +436,11 @@ h6,
 
 .portfolio-item:hover img {
     transform: scale(1.1);
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .portfolio-item .portfolio-overlay {
@@ -603,4 +611,19 @@ h6,
 .footer .copyright a:hover,
 .footer .footer-menu a:hover {
     color: var(--secondary);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    z-index: 1000;
 }
